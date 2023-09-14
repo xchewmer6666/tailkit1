@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ActivityCard = () => {
@@ -5,12 +6,12 @@ const ActivityCard = () => {
         <div className="relative w-full p-4 overflow-hidden bg-white shadow-lg rounded-xl md:w-80 dark:bg-gray-800">
             <div className="flex items-center justify-between w-full mb-8">
                 <p className="text-xl font-normal text-gray-800 dark:text-white">Activity</p>
-                <a
+                <Link
                     href="#"
                     className="flex items-center text-sm text-gray-300 border-0 hover:text-gray-600 dark:text-gray-50 dark:hover:text-white focus:outline-none"
                 >
                     VIEW ALL
-                </a>
+                </Link>
             </div>
             <div className="flex items-start justify-between mb-6 rounded">
                 <span className="p-2 text-white bg-yellow-300 rounded-full dark:text-gray-800">

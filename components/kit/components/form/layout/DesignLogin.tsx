@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../../elements/buttons/Button';
 import InputText from '../inputtext/InputText';
 import React from 'react';
@@ -7,9 +8,9 @@ const DesignLogin = () => {
         <div className="flex flex-wrap w-full">
             <div className="flex flex-col w-full md:w-1/2">
                 <div className="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24">
-                    <a href="#" className="p-4 text-xl font-bold text-white bg-black">
+                    <Link href="#" className="p-4 text-xl font-bold text-white bg-black">
                         Design.
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
@@ -62,12 +63,12 @@ const DesignLogin = () => {
                         </button>
                     </form>
                     <div className="pt-12 pb-12 text-center">
-                        <p>
+                        <div>
                             Don't have an account?{' '}
-                            <a href="#" className="font-semibold underline">
+                            <Link href="#" className="font-semibold underline">
                                 Register here.
-                            </a>
-                        </p>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

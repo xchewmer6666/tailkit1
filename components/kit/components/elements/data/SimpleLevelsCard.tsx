@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import React, { FC } from 'react';
 
 const SimpleLevelsCard: FC = () => {
     return (
         <div className="relative w-full overflow-hidden bg-white shadow-lg dark:bg-gray-700">
-            <a href="#" className="block w-full h-full">
+            <Link href="#" className="block w-full h-full">
                 <div className="flex items-center justify-between px-4 py-6 space-x-4">
                     <div className="flex items-center">
                         <span className="relative p-5 bg-yellow-100 rounded-full">
@@ -30,7 +31,7 @@ const SimpleLevelsCard: FC = () => {
                 <div className="w-full h-3 bg-gray-100">
                     <div className="w-2/5 h-full text-xs text-center text-white bg-green-400"></div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

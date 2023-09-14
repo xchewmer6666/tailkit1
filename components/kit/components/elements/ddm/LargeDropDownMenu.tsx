@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 
 interface Props {
@@ -73,7 +74,7 @@ const LargeDropDownMenu = (props: Props) => {
                         <div className="relative grid gap-6 px-5 py-6 bg-white divide-y divide-gray-100 dark:bg-gray-800 sm:gap-8 sm:p-8">
                             {props.items.map((item) => {
                                 return (
-                                    <a
+                                    <Link
                                         href={item.link || '#'}
                                         key={item.label}
                                         className="flex items-center p-3 -m-3 hover:bg-gray-50"
@@ -90,7 +91,7 @@ const LargeDropDownMenu = (props: Props) => {
                                                 </p>
                                             )}
                                         </div>
-                                    </a>
+                                    </Link>
                                 );
                             })}
                         </div>

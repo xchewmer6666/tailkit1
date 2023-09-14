@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import Button from '../../elements/buttons/Button';
+import Link from 'next/link';
 const ClassicShoppingCard: FC = () => {
     return (
         <div className="flex bg-white rounded-lg shadow dark:bg-gray-800">
@@ -66,9 +67,12 @@ const ClassicShoppingCard: FC = () => {
                             XL
                         </label>
                     </div>
-                    <a href="#" className="hidden ml-auto text-sm text-gray-500 underline md:block dark:text-gray-300">
+                    <Link
+                        href="#"
+                        className="hidden ml-auto text-sm text-gray-500 underline md:block dark:text-gray-300"
+                    >
                         Size Guide
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex mb-4 text-sm font-medium">
                     <Button label="Buy now" color="indigo" />

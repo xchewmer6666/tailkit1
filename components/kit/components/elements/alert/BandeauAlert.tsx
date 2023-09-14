@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -32,12 +33,12 @@ const BandeauAlert = (props: Props) => {
                         </p>
                     </div>
                     <div className="flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
-                        <a
+                        <Link
                             href={props.link}
                             className="flex items-center justify-center px-4 py-2 text-sm font-medium text-pink-600 bg-white border border-transparent rounded-md shadow-sm dark:text-gray-800 hover:bg-pink-50"
                         >
                             {props.linkLabel}
-                        </a>
+                        </Link>
                     </div>
                     <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-3">
                         <button

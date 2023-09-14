@@ -1,5 +1,6 @@
 import React from 'react';
 import NotificationBadge from '../../elements/badges/NotificationBadge';
+import Link from 'next/link';
 
 interface Props {
     headerText?: string;
@@ -37,7 +38,7 @@ const Sidebar = (props: Props) => {
                     <nav className={`mt-10 px-6 ${props.withDivider ? 'divide-y divide-gray-200' : ''}`}>
                         {props.links.map((link) => {
                             return (
-                                <a
+                                <Link
                                     key={link.label}
                                     className={`hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 ${
                                         props.withBorder && link.selected
@@ -60,21 +61,21 @@ const Sidebar = (props: Props) => {
                                             <NotificationBadge size="small" number={link.notifications} />
                                         )}
                                     </span>
-                                </a>
+                                </Link>
                             );
                         })}
                     </nav>
 
                     {props.bottomLink && (
                         <div className="absolute bottom-0 my-10">
-                            <a
+                            <Link
                                 className={`text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200 flex items-center py-2 px-8`}
                                 href={props.bottomLink.link || '#'}
                             >
                                 {props.bottomLink.icon}
 
                                 <span className="mx-4 font-medium">{props.bottomLink.label}</span>
-                            </a>
+                            </Link>
                         </div>
                     )}
                 </div>

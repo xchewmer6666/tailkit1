@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Pictures404 = () => {
@@ -28,18 +29,18 @@ const Pictures404 = () => {
                         </div>
 
                         <div className="hidden space-x-4 md:flex md:items-center md:justify-end">
-                            <a
+                            <Link
                                 href="#"
                                 className="px-3 py-2 text-gray-400 uppercase transition duration-200 ease-in hover:text-gray-700 focus:outline-none"
                             >
                                 Shop
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#"
                                 className="px-3 py-2 text-gray-400 uppercase transition duration-200 ease-in hover:text-gray-700 focus:outline-none"
                             >
                                 Contact
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>

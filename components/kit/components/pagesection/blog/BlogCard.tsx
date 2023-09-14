@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '../../elements/avatars/Avatar';
+import Link from 'next/link';
 
 interface Props {
     img?: string;
@@ -15,7 +16,7 @@ interface Props {
 const BlogCard = (props: Props) => {
     return (
         <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <a href="#" className="block w-full h-full">
+            <Link href="#" className="block w-full h-full">
                 <img alt="blog photo" src={props.img} className="object-cover w-full max-h-40" />
                 <div className="w-full p-4 bg-white dark:bg-gray-800">
                     <p className="font-medium text-indigo-500 text-md">{props.categ}</p>
@@ -45,7 +46,7 @@ const BlogCard = (props: Props) => {
                         </div>
                     )}
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

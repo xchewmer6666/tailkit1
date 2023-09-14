@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { FC } from 'react';
 
 const includes = ['All illimited components Tailwind', 'Own analitycs templates', '24/24 support link'];
@@ -53,9 +54,9 @@ const PricingCard3: FC = () => {
                             <div>
                                 {bon}
                                 {index === 0 && (
-                                    <a href="#" className="font-semibold text-red-500">
+                                    <Link href="#" className="font-semibold text-red-500">
                                         free plan
-                                    </a>
+                                    </Link>
                                 )}
                             </div>
                         </li>

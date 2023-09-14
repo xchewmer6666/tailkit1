@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../buttons/Button';
+import Link from 'next/link';
 
 const CookieAlert2 = () => {
     return (
@@ -13,9 +14,9 @@ const CookieAlert2 = () => {
             </span>
 
             <div className="flex items-center justify-between">
-                <a className="mr-1 text-xs text-gray-400 hover:text-gray-800" href="#">
+                <Link className="mr-1 text-xs text-gray-400 hover:text-gray-800" href="#">
                     Privacy Policy
-                </a>
+                </Link>
                 <div className="w-1/2">
                     <Button label="See more" color="indigo" />
                 </div>

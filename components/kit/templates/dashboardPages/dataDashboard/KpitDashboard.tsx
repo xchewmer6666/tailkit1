@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from '../../../components/elements/avatars/Avatar';
 import SimpleLevelsCard from '../../../components/elements/data/SimpleLevelsCard';
+import Link from 'next/link';
 
 const KpiProject = () => {
     return (
@@ -14,7 +15,7 @@ const KpiProject = () => {
 
                         <nav className="mt-6">
                             <div>
-                                <a
+                                <Link
                                     className="flex items-center justify-start w-full p-2 pl-6 my-2 text-gray-800 transition-colors duration-200 border-l-4 border-purple-500 dark:text-white"
                                     href="#"
                                 >
@@ -30,8 +31,8 @@ const KpiProject = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-2 text-sm font-normal">Home</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-2 pl-6 my-2 text-gray-400 transition-colors duration-200 border-l-4 border-transparent hover:text-gray-800"
                                     href="#"
                                 >
@@ -52,8 +53,8 @@ const KpiProject = () => {
                                             0
                                         </span>
                                     </span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-2 pl-6 my-2 text-gray-400 transition-colors duration-200 border-l-4 border-transparent hover:text-gray-800"
                                     href="#"
                                 >
@@ -69,8 +70,8 @@ const KpiProject = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Resources</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-2 pl-6 my-2 text-gray-400 transition-colors duration-200 border-l-4 border-transparent hover:text-gray-800"
                                     href="#"
                                 >
@@ -86,7 +87,7 @@ const KpiProject = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Store feedback</span>
-                                </a>
+                                </Link>
                             </div>
                         </nav>
                     </div>

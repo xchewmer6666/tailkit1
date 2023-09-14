@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const NextJSCta = () => {
@@ -14,18 +15,18 @@ const NextJSCta = () => {
                         more. No config needed.
                     </h2>
                     <div className="flex items-center justify-center mt-4">
-                        <a
+                        <Link
                             href="#"
                             className="px-4 py-2 mr-4 text-white uppercase bg-gray-800 border-2 border-transparent text-md hover:bg-gray-900"
                         >
                             Get started
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="#"
                             className="px-4 py-2 text-gray-800 uppercase bg-transparent border-2 border-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md"
                         >
                             Documentation
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="relative block w-full mx-auto mt-6 md:mt-0">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../elements/buttons/Button';
+import Link from 'next/link';
 
 const TodoList = () => {
     const list = [
@@ -27,7 +28,7 @@ const TodoList = () => {
                     {list.map((list) => {
                         return (
                             <li key={list.categ}>
-                                <a className="block hover:bg-gray-50 dark:hover:bg-gray-900">
+                                <Link href="#" className="block hover:bg-gray-50 dark:hover:bg-gray-900">
                                     <div className="px-4 py-4 sm:px-6">
                                         <div className="flex items-center justify-between">
                                             <p className="text-gray-700 text-md dark:text-white md:truncate">
@@ -47,7 +48,7 @@ const TodoList = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         );
                     })}

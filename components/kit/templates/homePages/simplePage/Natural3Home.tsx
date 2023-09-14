@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Natural3Home = () => {
@@ -30,13 +31,24 @@ const Natural3Home = () => {
                         </div>
 
                         <div className="items-center hidden md:flex">
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
                                 Ticket
-                            </a>
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">Info</a>
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                            </Link>
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
+                                Info
+                            </Link>
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
                                 Contact
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
@@ -53,12 +65,12 @@ const Natural3Home = () => {
                         Mississippi river began to take a significant place in the history of North America.
                     </p>
 
-                    <a
+                    <Link
                         href="#"
                         className="block px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900"
                     >
                         Plant a tree
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

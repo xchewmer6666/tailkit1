@@ -47,7 +47,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                                 </div>
                             )}
                             <Link href={section.link}>
-                                <a className="hover:opacity-100">
+                                <div className="hover:opacity-100">
                                     <img
                                         src={section.img}
                                         alt={section.title}
@@ -59,7 +59,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                                             ({section.items} {isTemplate ? 'templates' : 'components'})
                                         </span>
                                     </p>
-                                </a>
+                                </div>
                             </Link>
                         </div>
                     );

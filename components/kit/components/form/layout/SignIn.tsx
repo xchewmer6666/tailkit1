@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../elements/buttons/Button';
 import InputText from '../inputtext/InputText';
+import Link from 'next/link';
 
 interface Props {
     withFacebook?: boolean;
@@ -96,12 +97,12 @@ const SignIn = (props: Props) => {
 
                     <div className="flex items-center mb-6 -mt-4">
                         <div className="flex ml-auto">
-                            <a
+                            <Link
                                 href="#"
                                 className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
                             >
                                 Forgot Your Password?
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -111,13 +112,13 @@ const SignIn = (props: Props) => {
                 </form>
             </div>
             <div className="flex items-center justify-center mt-6">
-                <a
+                <Link
                     href="#"
                     target="_blank"
                     className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white"
                 >
                     <span className="ml-2">You don't have an account?</span>
-                </a>
+                </Link>
             </div>
         </div>
     );

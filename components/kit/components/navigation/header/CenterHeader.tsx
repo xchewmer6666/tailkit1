@@ -1,12 +1,13 @@
+import Link from 'next/link';
 import React from 'react';
 
 const CenterHeader = () => {
     return (
         <nav className="flex flex-wrap items-center justify-between p-4 bg-white">
             <div className="w-auto lg:order-2 lg:w-1/5 lg:text-center">
-                <a className="text-xl font-semibold text-gray-800 font-heading" href="#">
+                <Link className="text-xl font-semibold text-gray-800 font-heading" href="#">
                     Charlie Rabiller
-                </a>
+                </Link>
             </div>
             <div className="block lg:hidden">
                 <button className="flex items-center px-3 py-2 text-indigo-500 border border-indigo-500 rounded navbar-burger">
@@ -17,26 +18,26 @@ const CenterHeader = () => {
                 </button>
             </div>
             <div className="hidden w-full navbar-menu lg:order-1 lg:block lg:w-2/5">
-                <a className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                <Link className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     Home
-                </a>
-                <a className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                </Link>
+                <Link className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     Team
-                </a>
-                <a className="block mt-4 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                </Link>
+                <Link className="block mt-4 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     Galery
-                </a>
+                </Link>
             </div>
             <div className="hidden w-full navbar-menu lg:order-3 lg:block lg:w-2/5 lg:text-right">
-                <a className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                <Link className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     Content
-                </a>
-                <a className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                </Link>
+                <Link className="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     FAQ
-                </a>
-                <a className="block mt-4 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
+                </Link>
+                <Link className="block mt-4 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600" href="#">
                     Contact
-                </a>
+                </Link>
             </div>
         </nav>
     );

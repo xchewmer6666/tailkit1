@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const SimpleFolioHome = () => {
@@ -7,9 +8,9 @@ const SimpleFolioHome = () => {
                 <div className="absolute z-20 text-xl text-extrabold right-12 text-start top-1/4">
                     <span className="text-7xl">🎨</span>
                     <p>Got a project ?</p>
-                    <a href="#" className="underline">
+                    <Link href="#" className="underline">
                         Let's talk
-                    </a>
+                    </Link>
                 </div>
 
                 <svg viewBox="0 0 200 200" className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -36,18 +37,18 @@ const SimpleFolioHome = () => {
                     </div>
                     <div className="flex items-center">
                         <nav className="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex">
-                            <a href="#" className="flex px-6 py-2 hover:text-black">
+                            <Link href="#" className="flex px-6 py-2 hover:text-black">
                                 Works
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-black">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-black">
                                 Resume
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-black">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-black">
                                 Services
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-black">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-black">
                                 Contact
-                            </a>
+                            </Link>
                         </nav>
                         <button className="flex flex-col ml-4 lg:hidden">
                             <span className="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
@@ -66,12 +67,12 @@ const SimpleFolioHome = () => {
                             Building digital products, brands, and experiences.
                         </h2>
                         <div className="flex items-center justify-center mt-4">
-                            <a
+                            <Link
                                 href="#"
                                 className="px-4 py-2 my-2 text-gray-800 uppercase bg-transparent border-2 border-gray-800 md:mt-16 dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 dark:text-white hover:bg-gray-800 hover:text-white text-md"
                             >
                                 CONNECT WITH ME
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

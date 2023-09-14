@@ -1,6 +1,7 @@
 import React from 'react';
 import InputText from '../inputtext/InputText';
 import Button from '../../elements/buttons/Button';
+import Link from 'next/link';
 
 const LoginWithBackground = () => {
     return (
@@ -21,9 +22,12 @@ const LoginWithBackground = () => {
                                 <Button submit={true} color="indigo" label="Validate" />
                             </div>
                             <div className="text-center">
-                                <a className="right-0 inline-block text-sm font-light align-baseline text-500 hover:text-gray-800">
+                                <Link
+                                    href="#"
+                                    className="right-0 inline-block text-sm font-light align-baseline text-500 hover:text-gray-800"
+                                >
                                     Create an account
-                                </a>
+                                </Link>
                             </div>
                         </form>
                     </div>

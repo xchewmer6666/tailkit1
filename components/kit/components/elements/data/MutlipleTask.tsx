@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import React, { FC } from 'react';
 
 const MutlipleTask: FC = () => {
     return (
         <div className="relative p-4 overflow-hidden text-gray-700 bg-white shadow-lg rounded-xl w-60 md:w-72 dark:bg-gray-800 dark:text-gray-100">
-            <a href="#" className="block w-full h-full">
+            <Link href="#" className="block w-full h-full">
                 <div className="w-full">
                     <p className="mb-4 text-2xl font-light text-gray-700 dark:text-white">Task Progress</p>
 
@@ -39,7 +40,7 @@ const MutlipleTask: FC = () => {
                         <div className="w-full h-full text-xs text-center text-white bg-pink-400 rounded-full"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

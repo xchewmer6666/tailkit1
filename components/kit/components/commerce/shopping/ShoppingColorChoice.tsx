@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { FC } from 'react';
 const ShoppingColorChoice: FC = () => {
     return (
@@ -15,24 +16,27 @@ const ShoppingColorChoice: FC = () => {
                         <div>
                             <ul className="flex flex-row items-center justify-center">
                                 <li className="mr-4 last:mr-0">
-                                    <span className="block p-1 transition duration-300 ease-in border-2 border-gray-500 rounded-full">
-                                        <a href="#blue" className="block w-6 h-6 bg-blue-900 rounded-full"></a>
-                                    </span>
+                                    <div className="block p-1 transition duration-300 ease-in border-2 border-gray-500 rounded-full">
+                                        <Link href="#blue" className="block w-6 h-6 bg-blue-900 rounded-full"></Link>
+                                    </div>
                                 </li>
                                 <li className="mr-4 last:mr-0">
-                                    <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
-                                        <a href="#yellow" className="block w-6 h-6 bg-yellow-500 rounded-full"></a>
-                                    </span>
+                                    <div className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
+                                        <Link
+                                            href="#yellow"
+                                            className="block w-6 h-6 bg-yellow-500 rounded-full"
+                                        ></Link>
+                                    </div>
                                 </li>
                                 <li className="mr-4 last:mr-0">
-                                    <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
-                                        <a href="#red" className="block w-6 h-6 bg-red-500 rounded-full"></a>
-                                    </span>
+                                    <div className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
+                                        <Link href="#red" className="block w-6 h-6 bg-red-500 rounded-full"></Link>
+                                    </div>
                                 </li>
                                 <li className="mr-4 last:mr-0">
-                                    <span className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
-                                        <a href="#green" className="block w-6 h-6 bg-green-500 rounded-full"></a>
-                                    </span>
+                                    <div className="block p-1 transition duration-300 ease-in border-2 border-white rounded-full hover:border-gray-500">
+                                        <Link href="#green" className="block w-6 h-6 bg-green-500 rounded-full"></Link>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

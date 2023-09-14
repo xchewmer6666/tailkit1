@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import Avatar from '../../elements/avatars/Avatar';
 import FormSubscribe from '../../form/layout/FormSubscribe';
 import PagerButton from '../../elements/buttons/PagerButton';
+import Link from 'next/link';
 
 interface Props {
     withHeader?: boolean;
@@ -119,9 +120,14 @@ const ComplexTable = (props: Props) => {
                                             </td>
                                             {props.withAction && (
                                                 <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                                    <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                                        Edit
-                                                    </a>
+                                                    <div>
+                                                        <Link
+                                                            href="#"
+                                                            className="text-indigo-600 hover:text-indigo-900"
+                                                        >
+                                                            Edit
+                                                        </Link>
+                                                    </div>
                                                 </td>
                                             )}
                                         </tr>

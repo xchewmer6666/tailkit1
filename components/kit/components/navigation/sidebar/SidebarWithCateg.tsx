@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const links = [
@@ -129,7 +130,7 @@ const SidebarWithCateg = () => {
             <div className="flex flex-col sm:flex-row sm:justify-around">
                 <div className="h-screen w-72">
                     <nav className="px-6 mt-10">
-                        <a
+                        <Link
                             className="flex items-center justify-start p-2 my-6 text-gray-600 transition-colors duration-200 hover:text-gray-800 bg-gray-50 dark:bg-gray-600 dark:text-gray-400hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
                             href="#"
                         >
@@ -147,7 +148,7 @@ const SidebarWithCateg = () => {
                             </svg>
 
                             <span className="mx-4 font-normal text-md">Dashboard</span>
-                        </a>
+                        </Link>
                         {links.map((link) => {
                             return (
                                 <div key={link.label}>
@@ -156,7 +157,7 @@ const SidebarWithCateg = () => {
                                     </p>
                                     {link.links.map((entry) => {
                                         return (
-                                            <a
+                                            <Link
                                                 key={entry.label}
                                                 className="flex items-center justify-start p-2 my-4 font-thin text-gray-500 transition-colors duration-200 hover:text-gray-800 dark:text-gray-400 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
                                                 href="#"
@@ -164,7 +165,7 @@ const SidebarWithCateg = () => {
                                                 <span className="text-left">{entry.icon}</span>
 
                                                 <span className="mx-4 font-normal text-md">{entry.label}</span>
-                                            </a>
+                                            </Link>
                                         );
                                     })}
                                 </div>

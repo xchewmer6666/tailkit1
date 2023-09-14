@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '../../elements/avatars/Avatar';
+import Link from 'next/link';
 
 const DoubleTeam = () => {
     return (
@@ -10,9 +11,9 @@ const DoubleTeam = () => {
                     <h3 className="mb-3 text-xl text-gray-800 font-title">Jacky Pout</h3>
                     <p className="font-body">FullStack Engineer</p>
                     <p className="mb-4 text-sm font-body">He love caramel and he hate PHP </p>
-                    <a className="text-blue-500 font-body hover:text-gray-800" href="#">
+                    <Link className="text-blue-500 font-body hover:text-gray-800" href="#">
                         Jacky@poute.com
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -26,9 +27,9 @@ const DoubleTeam = () => {
                     <h3 className="mb-3 text-xl text-gray-800 font-title">Damien Marley</h3>
                     <p className="font-body">CEO</p>
                     <p className="mb-4 text-sm font-body">He's fun and listen everyday Bob Marley</p>
-                    <a className="text-blue-500 font-body hover:text-gray-800" href="mailto:dino@siete.pm">
+                    <Link className="text-blue-500 font-body hover:text-gray-800" href="mailto:dino@siete.pm">
                         Damien@marley.com
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import NextJSCta from '../../../components/pagesection/cta/NextJSCta';
+import Link from 'next/link';
 
 const NextJs = () => {
     return (
@@ -16,21 +17,21 @@ const NextJs = () => {
                     </div>
                     <div className="flex items-center">
                         <nav className="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex">
-                            <a href="#" className="flex px-6 py-2 text-indigo-500 border-b-2 border-indigo-500">
+                            <Link href="#" className="flex px-6 py-2 text-indigo-500 border-b-2 border-indigo-500">
                                 Home
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-indigo-500">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-indigo-500">
                                 Watch
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-indigo-500">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-indigo-500">
                                 Product
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-indigo-500">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-indigo-500">
                                 Contact
-                            </a>
-                            <a href="#" className="flex px-6 py-2 hover:text-indigo-500">
+                            </Link>
+                            <Link href="#" className="flex px-6 py-2 hover:text-indigo-500">
                                 Carrer
-                            </a>
+                            </Link>
                         </nav>
                         <button className="flex flex-col ml-4 lg:hidden">
                             <span className="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>

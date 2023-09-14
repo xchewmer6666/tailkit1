@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const TailkitHome = () => {
@@ -9,10 +10,10 @@ const TailkitHome = () => {
                         <div className="px-4 mx-auto max-w-7xl sm:px-6">
                             <div className="flex items-center justify-between py-6 border-gray-100 md:space-x-10">
                                 <div className="flex items-center justify-start gap-12">
-                                    <a className="flex items-center" href="/">
+                                    <Link className="flex items-center" href="/">
                                         <img className="w-auto h-12 sm:h-12" src="/icons/rocket.svg" alt="site" />
                                         <span className="ml-2 text-2xl font-bold text-indigo-600">Tail-Kit</span>
-                                    </a>
+                                    </Link>
                                     <nav className="hidden space-x-10 md:flex">
                                         <div className="relative">
                                             <button
@@ -81,15 +82,15 @@ const TailkitHome = () => {
                                 </h2>
                                 <div className="w-full mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                     <div className="rounded-md shadow">
-                                        <a
+                                        <Link
                                             className="flex items-center justify-center w-full px-4 px-8 py-2 py-3 text-base font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
                                             href="/started"
                                         >
                                             Get started
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="mt-3 sm:mt-0 sm:ml-3">
-                                        <a
+                                        <Link
                                             target="_blank"
                                             rel="noreferrer"
                                             href="https://github.com/Charlie85270/tail-kit"
@@ -106,7 +107,7 @@ const TailkitHome = () => {
                                                 <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
                                             </svg>
                                             <span className="ml-2">Github</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="mt-4">
@@ -328,9 +329,9 @@ const TailkitHome = () => {
                                                         </svg>
                                                         <div>
                                                             All illimited link
-                                                            <a href="#" className="font-semibold text-red-500">
+                                                            <Link href="#" className="font-semibold text-red-500">
                                                                 free plan
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </li>
                                                     <li className="flex items-center mb-3 space-x-2">
@@ -384,13 +385,13 @@ const TailkitHome = () => {
                                                     className="w-full mb-4 rounded-t-lg h-28"
                                                 />
                                                 <div className="flex flex-col items-center justify-center p-4 -mt-16">
-                                                    <a href="#" className="relative block">
+                                                    <Link href="#" className="relative block">
                                                         <img
                                                             alt="profil"
                                                             src="/images/person/1.jpg"
                                                             className="w-16 h-16 mx-auto rounded-full "
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <p className="mt-2 text-xl font-medium text-gray-800 dark:text-white">
                                                         Charlie
                                                     </p>
@@ -777,13 +778,13 @@ const TailkitHome = () => {
                                         <div className="mb-4">
                                             <div className="w-full max-w-xl px-5 py-4 mx-auto text-gray-800 bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-50">
                                                 <div className="w-full pt-1 mx-auto -mt-16 text-center">
-                                                    <a href="#" className="relative block">
+                                                    <Link href="#" className="relative block">
                                                         <img
                                                             alt="profil"
                                                             src="/images/person/1.jpg"
                                                             className="w-20 h-20 mx-auto rounded-full "
                                                         />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="w-full">
                                                     <div className="mb-6 text-center">
@@ -833,12 +834,12 @@ const TailkitHome = () => {
                                                     your experience better.
                                                 </span>
                                                 <div className="flex items-center justify-between">
-                                                    <a
+                                                    <Link
                                                         className="mr-1 text-xs text-gray-400 hover:text-gray-800"
                                                         href="#"
                                                     >
                                                         Privacy Policy
-                                                    </a>
+                                                    </Link>
                                                     <div className="w-1/2">
                                                         <button
                                                             type="button"

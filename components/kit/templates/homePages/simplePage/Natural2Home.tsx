@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Natural2Home = () => {
@@ -30,13 +31,24 @@ const Natural2Home = () => {
                         </div>
 
                         <div className="items-center hidden md:flex">
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
                                 Ticket
-                            </a>
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">Info</a>
-                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                            </Link>
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
+                                Info
+                            </Link>
+                            <Link
+                                href="#"
+                                className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300"
+                            >
                                 Contact
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
@@ -48,12 +60,12 @@ const Natural2Home = () => {
                         Life-changing
                     </h1>
 
-                    <a
+                    <Link
                         href="#"
                         className="block px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900"
                     >
                         Start Now
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

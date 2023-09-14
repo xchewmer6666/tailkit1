@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface Props {
@@ -56,7 +57,7 @@ const DropDownMenu = (props: Props) => {
                     >
                         {props.items.map((item) => {
                             return (
-                                <a
+                                <Link
                                     key={item.label}
                                     href={item.link || '#'}
                                     className={`${
@@ -70,7 +71,7 @@ const DropDownMenu = (props: Props) => {
                                         <span>{item.label}</span>
                                         {item.desc && <span className="text-xs text-gray-400">{item.desc}</span>}
                                     </span>
-                                </a>
+                                </Link>
                             );
                         })}
                     </div>

@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import AppHeader from '../site/header/AppHeader';
 import Meta from '../site/Meta';
 
-const HomeLayout: FC = ({ children }) => {
+const HomeLayout = ({ children }: any) => {
     return (
         <>
             <Meta

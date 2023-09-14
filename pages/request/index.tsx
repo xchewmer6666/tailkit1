@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import AppLayout from '../../components/layout/AppLayout';
+import Link from 'next/link';
 
 const RequestPage: FC = () => {
     return (
@@ -28,12 +29,12 @@ const RequestPage: FC = () => {
                                 <img src="/request.png" className="w-64 shadow-lg rounded-lg my-2" alt="request icon" />
                             </p>
 
-                            <a
+                            <Link
                                 href="https://github.com/Charlie85270/tail-kit/issues"
                                 className="w-40 flex items-center justify-center px-4 py-1 text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2"
                             >
                                 Open a issue
-                            </a>
+                            </Link>
                         </div>
                     </li>
 

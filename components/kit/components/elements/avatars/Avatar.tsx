@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -21,7 +22,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
         roundedClasses = type === 'square' ? '' : 'rounded-lg';
     }
     return (
-        <a href="#" className="relative block">
+        <Link href="#" className="relative block">
             <img
                 alt="profil"
                 src={img || '/images/person/1.jpg'}
@@ -32,7 +33,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
             {withInfo && (
                 <span className="absolute w-3 h-3 transform -translate-x-1/2 bg-green-500 border-2 border-white rounded-full left-1/2 -bottom-2"></span>
             )}
-        </a>
+        </Link>
     );
 };
 export default Avatar;

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -17,9 +18,9 @@ const LittleSidebar = (props: Props) => {
             <nav className="flex flex-col justify-between w-20 h-screen bg-white dark:bg-gray-800">
                 <div className="mt-10 mb-10">
                     {props.withHeader && (
-                        <a href="#">
+                        <Link href="#">
                             <img src="/images/person/2.jpeg" className="w-10 h-10 mx-auto mb-3 rounded-full" />
-                        </a>
+                        </Link>
                     )}
 
                     <div className="mt-10">
@@ -27,13 +28,15 @@ const LittleSidebar = (props: Props) => {
                             {props.links.map((link) => {
                                 return (
                                     <li className="my-12 text-center" key={link.label}>
-                                        <a href="#">
-                                            <span
-                                                className={`h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
-                                            >
-                                                {link.icon}
-                                            </span>
-                                        </a>
+                                        <div>
+                                            <Link href="#">
+                                                <span
+                                                    className={`h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
+                                                >
+                                                    {link.icon}
+                                                </span>
+                                            </Link>
+                                        </div>
                                     </li>
                                 );
                             })}
@@ -42,7 +45,7 @@ const LittleSidebar = (props: Props) => {
                 </div>
                 {props.withBottomLink && (
                     <div className="mb-4">
-                        <a href="#">
+                        <Link href="#">
                             <span>
                                 <svg
                                     className="w-5 h-5 mx-auto text-gray-300 fill-current hover:text-red-500"
@@ -60,7 +63,7 @@ const LittleSidebar = (props: Props) => {
                                     />
                                 </svg>
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 )}
             </nav>

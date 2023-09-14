@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 interface Props {
     size?: 'small' | 'normal' | 'big';
@@ -15,34 +16,34 @@ const MultipleAvatar = ({ size, withHoverEffect }: Props) => {
 
     return (
         <div className="flex -space-x-2">
-            <a href="#" className={`${effectClasses}`}>
+            <Link href="#" className={`${effectClasses}`}>
                 <img
                     className={`inline-block ${sizeClasses} rounded-full object-cover ring-2 ring-white`}
                     src="/images/person/1.jpg"
                     alt="Guy"
                 />
-            </a>
-            <a href="#" className={`${effectClasses}`}>
+            </Link>
+            <Link href="#" className={`${effectClasses}`}>
                 <img
                     className={`inline-block ${sizeClasses} rounded-full object-cover ring-2 ring-white`}
                     src="/images/person/2.jpeg"
                     alt="Max"
                 />
-            </a>
-            <a href="#" className={`${effectClasses}`}>
+            </Link>
+            <Link href="#" className={`${effectClasses}`}>
                 <img
                     className={`inline-block ${sizeClasses} rounded-full object-cover ring-2 ring-white`}
                     src="/images/person/3.jpg"
                     alt="Charles"
                 />
-            </a>
-            <a href="#" className={`${effectClasses}`}>
+            </Link>
+            <Link href="#" className={`${effectClasses}`}>
                 <img
                     className={`inline-block ${sizeClasses} rounded-full object-cover ring-2 ring-white`}
                     src="/images/person/4.jpg"
                     alt="Jade"
                 />
-            </a>
+            </Link>
         </div>
     );
 };

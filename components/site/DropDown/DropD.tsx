@@ -68,14 +68,14 @@ const DropD = (props: Props) => {
                             {props.links.map((entry) => {
                                 return (
                                     <Link href={entry.link} key={entry.label}>
-                                        <a className="flex items-center py-2 -m-3 text-gray-900 hover:text-indigo-600">
+                                        <div className="flex items-center py-2 -m-3 text-gray-900 hover:text-indigo-600">
                                             {entry.icon}
 
                                             <div className="font-normal">
                                                 <p className="text-lg">{entry.label}</p>
                                                 <p className="mt-0 text-xs text-gray-400">{entry.desc}</p>
                                             </div>
-                                        </a>
+                                        </div>
                                     </Link>
                                 );
                             })}

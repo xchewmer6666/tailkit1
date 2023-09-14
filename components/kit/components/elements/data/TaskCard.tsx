@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import MultipleAvatar from '../avatars/MultipleAvatar';
+import Link from 'next/link';
 
 const TaskCard: FC = () => {
     return (
         <div className="relative max-w-xs p-4 overflow-hidden bg-white shadow-lg rounded-xl dark:bg-gray-800">
-            <a href="#" className="block w-full h-full">
+            <Link href="#" className="block w-full h-full">
                 <div className="w-full">
                     <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">
                         Improve css design of the carousel
@@ -26,7 +27,7 @@ const TaskCard: FC = () => {
                         <span className="ml-2 text-gray-500 dark:text-gray-300">+ 4 more</span>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import Avatar from '../avatars/Avatar';
+import Link from 'next/link';
 
 const SimpleTask: FC = () => {
     return (
         <div className="relative w-full p-4 overflow-hidden bg-white shadow-lg rounded-xl md:w-72 dark:bg-gray-800">
-            <a href="#" className="block w-full h-full">
+            <Link href="#" className="block w-full h-full">
                 <div className="flex items-center w-full">
                     <Avatar size="small" />
                     <div className="flex flex-col items-center ml-2">
@@ -18,7 +19,7 @@ const SimpleTask: FC = () => {
                 <div className="w-full h-2 bg-blue-200 rounded-full">
                     <div className="w-2/3 h-full text-xs text-center text-white bg-blue-600 rounded-full"></div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

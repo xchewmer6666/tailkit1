@@ -6,6 +6,7 @@ import LessonsList from '../../../components/elements/data/LessonsList';
 import MessagesList from '../../../components/elements/data/MessagesList';
 import SlackTask from '../../../components/elements/data/SlackTask';
 import TasksList from '../../../components/elements/data/TasksList';
+import Link from 'next/link';
 
 const SimpleProjectDashboard = () => {
     return (
@@ -59,7 +60,7 @@ const SimpleProjectDashboard = () => {
 
                         <nav className="mt-6">
                             <div>
-                                <a
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-blue-500 uppercase transition-colors duration-200 border-r-4 border-blue-500 bg-gradient-to-r from-white to-blue-100 dark:from-gray-700 dark:to-gray-800"
                                     href="#"
                                 >
@@ -75,8 +76,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Dashboard</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -93,8 +94,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Projects</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -111,8 +112,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">My tasks</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -129,8 +130,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Calendar</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -147,8 +148,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Time manage</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -165,8 +166,8 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Reports</span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
@@ -183,7 +184,7 @@ const SimpleProjectDashboard = () => {
                                         </svg>
                                     </span>
                                     <span className="mx-4 text-sm font-normal">Settings</span>
-                                </a>
+                                </Link>
                             </div>
                         </nav>
                     </div>

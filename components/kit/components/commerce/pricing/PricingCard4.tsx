@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { FC } from 'react';
 
 const PricingCard4: FC = () => {
@@ -79,12 +80,12 @@ const PricingCard4: FC = () => {
                     </li>
                 </ul>
                 <div className="mt-6 rounded-md shadow">
-                    <a
+                    <Link
                         href="#"
                         className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline"
                     >
                         Start team plan
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

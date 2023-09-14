@@ -1,3 +1,5 @@
+'use client';
+
 import React, { FC } from 'react';
 import AppLayout from '../../components/layout/AppLayout';
 import { LiveProvider, LiveEditor } from 'react-live';
@@ -58,9 +60,9 @@ const StartedPage: FC = () => {
 
                 <p className="mt-1 text-lg text-gray-500">
                     Tail-Kit is based on{' '}
-                    <a href="https://tailwindcss.com/" className="text-gray-700 underline hover:text-gray-800">
+                    <Link href="https://tailwindcss.com/" className="text-gray-700 underline hover:text-gray-800">
                         Tailwind CSS framework{' '}
-                    </a>
+                    </Link>
                     .
                 </p>
                 <p className="mt-1 text-lg text-gray-500">
@@ -69,9 +71,9 @@ const StartedPage: FC = () => {
                 <div className="mt-4">
                     <p className="mt-1 text-lg text-gray-500">
                         Link to install Tailwind CSS :{' '}
-                        <a href="https://tailwindcss.com/docs" className="text-xl text-gray-700 underline">
+                        <Link href="https://tailwindcss.com/docs" className="text-xl text-gray-700 underline">
                             Documentation
-                        </a>
+                        </Link>
                     </p>
 
                     <p className="flex items-center pt-4 mb-6 text-xl text-gray-700">
@@ -90,14 +92,14 @@ const StartedPage: FC = () => {
                     </p>
                     <div className="md:flex md:items-center md:space-x-4">
                         <Link href="/components">
-                            <a className="block w-auto px-4 py-3 mb-4 text-base font-medium text-center text-white bg-gray-800 rounded-md hover:bg-gray-700">
+                            <div className="block w-auto px-4 py-3 mb-4 text-base font-medium text-center text-white bg-gray-800 rounded-md hover:bg-gray-700">
                                 &#129513; See components
-                            </a>
+                            </div>
                         </Link>
                         <Link href="/templates">
-                            <a className="block w-auto px-4 py-3 mb-4 text-base font-medium text-center text-white bg-gray-800 rounded-md hover:bg-gray-700">
+                            <div className="block w-auto px-4 py-3 mb-4 text-base font-medium text-center text-white bg-gray-800 rounded-md hover:bg-gray-700">
                                 &#127912; See templates
-                            </a>
+                            </div>
                         </Link>
                     </div>
                     <SquarePub />
@@ -113,7 +115,7 @@ const StartedPage: FC = () => {
                 </p>
                 <p className="items-center block md:flex">
                     All components that need configuration are indicated with this sign:
-                    <a
+                    <Link
                         className="flex items-center justify-between p-2 ml-4 text-black bg-yellow-300 border border-gray-800 rounded-lg w-52 hover:bg-yellow-400"
                         href="#"
                     >
@@ -128,18 +130,18 @@ const StartedPage: FC = () => {
                             <path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" />
                         </svg>
                         Need configuration
-                    </a>
+                    </Link>
                 </p>
 
                 <div className="mt-4">
                     <p className="mt-1 text-lg text-gray-500">
                         For more information about Tailwind configuration:{' '}
-                        <a
+                        <Link
                             href="https://tailwindcss.com/docs/configuration"
                             className="text-xl text-gray-700 underline"
                         >
                             Documentation
-                        </a>
+                        </Link>
                     </p>
 
                     <p className="pt-4 mb-4 text-xl text-gray-700">
